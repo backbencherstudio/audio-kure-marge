@@ -1,0 +1,70 @@
+.payment-form-container {
+    padding: 20px ;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.payment-form-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.gpay-button {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.buy-gpay {
+    background-color: black;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+}
+
+.gpay-logo {
+    color: red;
+    font-weight: bold;
+}
+
+.card-element-container {
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.submit-button {
+    background-color: #000;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    border: none;
+}
+
+.submit-button:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+}
+
+.submit-button:hover:not(:disabled) {
+    background-color: #333;
+}

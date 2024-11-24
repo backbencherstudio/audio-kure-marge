@@ -1,0 +1,192 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Reddit Sans", sans-serif;
+}
+
+
+
+.logo_style {
+  background-image: url("./assets/fire.gif");
+  background-size: cover;
+  background-position: center;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.togoTest_style {
+  /* background: linear-gradient(30deg, #f84821, #f7b21d, #75FF33, #f7421a); */
+  background: linear-gradient(30deg, #81FCEB, #EBAEFF, #F3C475, #81FCB9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.AudioPlayButton {
+  background-color: var(--first-color);
+  background: linear-gradient(90deg, #8a5eff 0%, #4675ff 50%, #34cbbf 100%);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  padding: 0.5rem 2.2rem;
+  transition: 0.4s;
+}
+
+.merriweather {
+  font-family: "Merriweather", serif !important;
+}
+
+.p-bg {
+  @apply bg-[#EEB5B4]
+}
+
+.s-bg {
+  @apply bg-[#BFE5BE]
+}
+
+.t-bg {
+  @apply bg-[#EFD0B3]
+}
+
+.p-text {
+  @apply text-[#EEB5B4]
+}
+
+.s-text {
+  @apply text-[#BFE5BE]
+}
+
+.t-text {
+  @apply text-[#EFD0B3]
+}
+
+.btnGrad {
+  background: linear-gradient(90deg, #EEB5B4 0%, #BFE5BE 50%, #EFD0B3 100%);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  color: #4e4e4e !important
+}
+
+img {
+  pointer-events: none;
+}
+
+.label {
+  color: red;
+}
+
+.unique-hover-heart .icon,
+.unique-hover-coin .icon {
+  position: absolute;
+  font-size: 1.5rem;
+  opacity: 1;
+  /* Keep visible */
+  transform: translateY(0);
+  /* Start at original position */
+}
+
+/* Hover effect for continuous bubbling */
+.unique-hover-heart:hover .icon,
+.unique-hover-coin:hover .icon {
+  animation: bubble 0.8s infinite;
+  /* Trigger animation on hover */
+}
+
+@keyframes bubble {
+  0% {
+    transform: translateY(0) scale(1);
+    /* Original position and size */
+  }
+
+  50% {
+    transform: translateY(-20px) scale(1.2);
+    /* Move up and scale up */
+  }
+
+  100% {
+    transform: translateY(0) scale(1);
+    /* Move back down and original size */
+  }
+}
+
+/* Positioning for heart icons */
+.unique-hover-heart .icon:nth-child(1) {
+  top: -20px;
+  left: 10%;
+}
+
+.unique-hover-heart .icon:nth-child(2) {
+  top: -15px;
+  left: 25%;
+}
+
+.unique-hover-heart .icon:nth-child(3) {
+  top: -10px;
+  left: 40%;
+}
+
+.unique-hover-heart .icon:nth-child(4) {
+  top: -15px;
+  right: 10%;
+}
+
+.unique-hover-heart .icon:nth-child(5) {
+  top: -20px;
+  right: 25%;
+}
+
+/* Positioning for coin icons */
+.unique-hover-coin .icon:nth-child(1) {
+  top: -20px;
+  left: 10%;
+}
+
+.unique-hover-coin .icon:nth-child(2) {
+  top: -15px;
+  left: 25%;
+}
+
+.unique-hover-coin .icon:nth-child(3) {
+  top: -10px;
+  left: 40%;
+}
+
+.unique-hover-coin .icon:nth-child(4) {
+  top: -15px;
+  right: 10%;
+}
+
+.unique-hover-coin .icon:nth-child(5) {
+  top: -20px;
+  right: 25%;
+}
+
+.custom-scroll {
+  /* scrollbar-width: thin; */
+  scrollbar-color: #c0c0c0;
+}
+
+.custom-scroll::-webkit-scrollbar {
+  width: 4px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background-color: #38a08683;
+  border-radius: 10px;
+}
+
+.audio-player-container:hover {
+  box-shadow: 0 4px 20px rgba(49, 122, 122, 0.6);
+  transition: box-shadow 0.3s ease;
+}
+
+.audio-player-container audio {
+  background-color: #374151;
+  /* Dark gray */
+  color: #ffffff;
+  /* White text */
+}

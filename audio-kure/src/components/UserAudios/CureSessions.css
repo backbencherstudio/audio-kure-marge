@@ -1,0 +1,27 @@
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #4937af; 
+}
+
+.swiper-pagination-bullet {
+  background: #b0a3f8; 
+}
+
+.swiper-pagination-bullet-active {
+  background: #4937af;
+}
+
+.days-slider {
+  overflow: visible;
+}
+
+.swiper-slide {
+  width: auto;
+}
+
+@media (min-width: 1024px) {
+  .swiper-wrapper {
+    pointer-events: none;
+  }
+}
